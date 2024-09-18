@@ -1,12 +1,13 @@
+requests
 ### How to Run the Project
 
-1. **Set up your environment** (optional, but recommended):
-   - Create a virtual environment:
-     ```bash
-     python -m venv venv
-     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-     ```
-
-2. **Run the application**:
-   ```bash
-   python todo.py
+#1. **Set up your environment** (optional, but recommended):
+#   - Create a virtual environment:
+#     ```bash
+#     python -m venv venv
+#     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+#     ```
+#
+#2. **Run the application**:
+#   ```bash
+#   python todo.py
