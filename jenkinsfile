@@ -81,8 +81,6 @@ pipeline {
         stage('Scan Repository') {
             steps {
                 sh """
-                    which python
-                    python -m venv venv
                     source venv/bin/activate
                     ./frogbot scan-repository
                 """
