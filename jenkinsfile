@@ -20,7 +20,7 @@ pipeline {
     environment {
         // [Mandatory]
         JF_GIT_PROVIDER = "github"
-        JF_URL = "http://172.16.1.14"
+        JF_URL = "https://kimt.jfrog.io"
         JF_ACCESS_TOKEN = credentials("JF_ACCESS_TOKEN") 
         JF_GIT_TOKEN = credentials("JF_GIT_TOKEN")
         JF_RELEASES_REPO = ""
