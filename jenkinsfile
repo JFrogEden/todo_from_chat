@@ -80,7 +80,8 @@ pipeline {
         
         stage('Scan Repository') {
             steps {
-                sh "./frogbot scan-pull-request"
+                sh "./frogbot scan-repository"
+                //sh "./frogbot scan-repository"
             }
         }
         
