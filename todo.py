@@ -40,6 +40,8 @@ class TodoApp:
 def main():
     app = TodoApp()
 
+    print("Hello World! (: ")
+
     while True:
         print("\nTo-Do List Menu:")
         print("1. Add task")
