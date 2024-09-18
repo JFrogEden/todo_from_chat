@@ -80,11 +80,7 @@ pipeline {
         
         stage('Scan Repository') {
             steps {
-                sh """
-                    source venv/bin/activate
-                    ./frogbot scan-repository
-                """
-                //sh "./frogbot scan-repository"
+                sh "./frogbot scan-pull-request"
             }
         }
         
