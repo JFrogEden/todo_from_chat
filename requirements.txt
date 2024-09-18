@@ -1,4 +1,6 @@
 requests
+Flask==1.0.2
+
 ### How to Run the Project
 #
 #1. **Set up your environment** (optional, but recommended):

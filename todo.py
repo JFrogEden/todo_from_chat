@@ -1,5 +1,19 @@
-import json
-import os
+from flask import Flask, request
+import sqlite3
+import os 
+
+
+app = Flask(__name__)
+
+@app.route('/add_todo', methods=['POST'])
+def add_todo():
+    # Vulnerable to SQL injection
+    todo = request.form['todo']
+    conn = sqlite3.connect('todos.db')
+    cursor = conn.cursor()
+    cursor.execute(f"INSERT INTO todos (task) VALUES ('{todo}')")  # Unsafe
+    conn.commit()
+    return "Todo added!"
 
 class TodoApp:
     def __init__(self, filename='todos.json'):
@@ -72,3 +86,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    app.run(debug=True)
