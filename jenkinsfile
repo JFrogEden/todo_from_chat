@@ -68,10 +68,8 @@ pipeline {
         //    }
         //}
         
-        withPythonEnv('/home/edenb/python-example/venv/bin/python'){
-
-
-        }
+        //withPythonEnv('/home/edenb/python-example/venv/bin/python'){
+        //}
 
         stage('Download Frogbot') {
             steps {
