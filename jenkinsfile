@@ -1,8 +1,6 @@
 pipeline {
     agent any // Use your agent here with installed package manager (npm, go, python, etc.)
 
-    def virtual_env_activation = "source /home/edenb/python-example/bin/activate"
-
     triggers {
         GenericTrigger(
             genericVariables: [
